@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:animateLayoutChanges="true"
+    tools:context=".PlayerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_player"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#80000000"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="4dp"/>
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:show_buffering="when_playing"
+        app:show_shuffle_button="true"
+        app:show_next_button="true"
+        app:show_previous_button="true"
+        app:show_vr_button="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llActionButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="4dp"
+        android:background="#80000000"
+        android:elevation="5dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_player"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/btnDownloadMedia"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_download"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/download_button_desc"
+            android:scaleType="centerInside"
+            app:tint="@color/white"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageButton
+            android:id="@+id/btnAddMediaToPlaylist"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_playlist_add"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/add_to_playlist_button_desc"
+            android:scaleType="centerInside"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

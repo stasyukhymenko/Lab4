@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Lab4</string>
+
+    <string name="select_local_audio">Select Local Audio</string>
+    <string name="select_local_video">Select Local Video</string>
+    <string name="media_url_hint">Enter Media URL (Audio or Video)</string>
+    <string name="play_from_url_button">Play From URL</string>
+    <string name="playlists_header_main">Playlists</string>
+    <string name="view_manage_playlists_button">View/Manage Playlists</string>
+
+    <string name="player_activity_title">Media Player</string>
+    <string name="add_to_playlist_button">Add to Playlist</string>
+
+    <string name="download_button_desc">Download Media</string>
+    <string name="add_to_playlist_button_desc">Add to Playlist</string>
+    <string name="error_media_uri_not_found">Media URI not found</string>
+    <string name="error_loading_playlists">Error loading playlists</string>
+    <string name="no_playlists_available">No playlists available. Create one first.</string>
+    <string name="add_to_playlist_dialog_title">Add \'%1$s\' to Playlist</string>
+    <string name="added_to_playlist_toast">Added \'%1$s\' to playlist</string>
+
+    <string name="playback_channel_name">Media Playback</string>
+    <string name="playback_channel_description">Shows notification for media playback</string>
+    <string name="now_playing_default">Now Playing</string>
+    <string name="media_playback_active">Media Playback Active</string>
+    <string name="status_playing">Playing</string>
+    <string name="status_paused">Paused</string>
+
+    <string name="playlist_activity_title">Playlists</string>
+    <string name="playlists_header">Your Playlists</string>
+    <string name="create_new_playlist_button">Create New Playlist</string>
+    <string name="create_playlist_dialog_title">Create New Playlist</string>
+    <string name="playlist_name_hint">Playlist Name</string>
+    <string name="create_button">Create</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="add_local_file_button">Add Local File</string>
+    <string name="playlist_created_toast">Playlist created</string>
+    <string name="playlist_name_empty_toast">Playlist name cannot be empty</string>
+    <string name="playlist_name_exists_toast">Playlist name already exists</string>
+    <string name="delete_playlist_dialog_title">Delete Playlist</string>
+    <string name="delete_playlist_dialog_message">Are you sure you want to delete \'%1$s\' and all its media?</string> <!-- %1$s for name -->
+    <string name="delete_button">Delete</string>
+    <string name="playlist_deleted_toast">Playlist deleted</string>
+    <string name="cd_delete_playlist">Delete Playlist</string>
+
+    <string name="playlist_detail_activity_title">Playlist Details</string>
+    <string name="add_to_playlist_menu_item">Add to Playlist</string>
+    <string name="add_media_url_hint">Enter URL to add/download</string>
+    <string name="add_download_button">Add/Download</string>
+    <string name="item_added_toast">Item added</string>
+    <string name="item_removed_toast">Item removed</string>
+    <string name="invalid_playlist_id_toast">Invalid Playlist ID</string>
+    <string name="enter_url_toast">Please enter a URL</string>
+    <string name="download_manager_unavailable_toast">Download Manager not available</string>
+    <string name="download_started_toast">Download started: %1$s</string>
+    <string name="error_starting_download_toast">Error starting download</string>
+    <string name="cd_delete_media_item">Delete Media Item</string>
+
+    <string name="download_complete_title">Download Complete</string>
+    <string name="download_failed_title">Download Failed</string>
+    <string name="download_notification_description">Downloading media for Lab4</string>
+
+    <string name="unknown_media_title">Unknown Media</string>
+    <string name="no_file_selected">No file selected</string>
+
+</resources>
